@@ -3,8 +3,8 @@
 ## Запакавать в архив  
 
 ```
-tar cvf archive.tar /example
-tar cvzf archive.tar.gz /example
+tar -cvf archive.tar /example
+tar -cvzf archive.tar.gz /example
 ```
 * -с - команда, которая означает «создать архив»  
 * -f - команда на упаковку файлов и директорий в один файл архива  
@@ -21,4 +21,6 @@ tar -tvf archive.tar.gz
 ## Распакавать из архива  
 
 ```
-tar xfvz archive.tar.gz -C /tmp
+tar -xvf archive.tar -C /tmp
+tar -xvzf archive.tar.gz -C /tmp
+```
